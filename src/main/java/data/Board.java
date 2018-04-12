@@ -46,6 +46,14 @@ public class Board {
         }
     }
 
+    public int getHeight() {
+        return height;
+    }
+
+    public int getWidth() {
+        return width;
+    }
+
     /**
      * Funkcja sprawdza czy jeden z graczy zwyciężył
      * @param player - gracz który ma zostać sprawdzony pod kątem zwycięstwa

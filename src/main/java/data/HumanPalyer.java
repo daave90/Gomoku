@@ -1,6 +1,6 @@
 package data;
 
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
+
 
 public class HumanPalyer extends Player {
 
@@ -10,6 +10,6 @@ public class HumanPalyer extends Player {
 
     @Override
     public int[] makeMove() {
-        throw new NotImplementedException();
+        return null;
     }
 }

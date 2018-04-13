@@ -11,5 +11,5 @@ public abstract class Player {
         return id;
     }
 
-    public abstract int[] makeMove();
+    public abstract Board makeMove();
 }

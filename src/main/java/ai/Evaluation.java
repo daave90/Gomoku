@@ -6,6 +6,15 @@ import utils.Const;
 
 public class Evaluation {
 
+    public static int evaluate(Board board, Player player){
+        return countNotBlockedTwo(board, player) * 100 +
+                countNotBlockedThree(board, player) * 200 +
+                countNotBlockedFour(board, player) * 300 +
+                countBlockedTwo(board, player) * 50 +
+                countBlockedThree(board, player) * 150 +
+                countBlockedFour(board, player) * 250;
+    }
+
     /**
      * Funkcja zlicza ilość wystąpień nieblokowanych dwójek
      * @param board - plansza do analizy
@@ -25,26 +34,56 @@ public class Evaluation {
        return count;
    }
 
+    /**
+     * Funkcja zlicza ilość wystąpień nieblokowanych trójek
+     * @param board - plansza do analizy
+     * @param player - gracz, który jest analizowany
+     * @return ilość wystąpień nieblokowanych dwójek
+     */
     public static int countNotBlockedThree(Board board, Player player){
        int count = 0;
        return count;
     }
 
+    /**
+     * Funkcja zlicza ilość wystąpień nieblokowanych czwórek
+     * @param board - plansza do analizy
+     * @param player - gracz, który jest analizowany
+     * @return ilość wystąpień nieblokowanych dwójek
+     */
     public static int countNotBlockedFour(Board board, Player player){
         int count = 0;
         return count;
     }
 
+    /**
+     * Funkcja zlicza ilość wystąpień blokowanych dwójek
+     * @param board - plansza do analizy
+     * @param player - gracz, który jest analizowany
+     * @return ilość wystąpień nieblokowanych dwójek
+     */
     public static int countBlockedTwo(Board board, Player player){
         int count = 0;
         return count;
     }
 
+    /**
+     * Funkcja zlicza ilość wystąpień blokowanych trójek
+     * @param board - plansza do analizy
+     * @param player - gracz, który jest analizowany
+     * @return ilość wystąpień nieblokowanych dwójek
+     */
     public static int countBlockedThree(Board board, Player player){
         int count = 0;
         return count;
     }
 
+    /**
+     * Funkcja zlicza ilość wystąpień blokowanych czwórek
+     * @param board - plansza do analizy
+     * @param player - gracz, który jest analizowany
+     * @return ilość wystąpień nieblokowanych dwójek
+     */
     public static int countBlockedFour(Board board, Player player){
         int count = 0;
         return count;

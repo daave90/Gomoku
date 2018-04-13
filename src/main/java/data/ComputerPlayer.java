@@ -9,7 +9,7 @@ public class ComputerPlayer extends Player {
     }
 
     @Override
-    public int[] makeMove() {
+    public Board makeMove() {
         return null;
     }
 }

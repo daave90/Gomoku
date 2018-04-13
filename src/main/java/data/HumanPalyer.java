@@ -9,7 +9,7 @@ public class HumanPalyer extends Player {
     }
 
     @Override
-    public int[] makeMove() {
+    public Board makeMove() {
         return null;
     }
 }

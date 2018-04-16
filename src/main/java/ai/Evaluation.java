@@ -41,8 +41,16 @@ public class Evaluation {
      * @return ilość wystąpień nieblokowanych dwójek
      */
     public static int countNotBlockedThree(Board board, Player player){
-       int count = 0;
-       return count;
+        int count = 0;
+        for(int i = 0; i < board.getHeight(); i++){
+            for(int j = 0; j < board.getWidth(); j++){
+                if(NotBlockedThree.checkHorizontally(j, i, board, player)){count++;}
+                if(NotBlockedThree.checkVertically(j, i, board, player)){count++;}
+                if(NotBlockedThree.checkAskewDown(j, i, board, player)){count++;}
+                if(NotBlockedThree.checkAskewUp(j, i, board, player)){count++;}
+            }
+        }
+        return count;
     }
 
     /**
@@ -53,6 +61,14 @@ public class Evaluation {
      */
     public static int countNotBlockedFour(Board board, Player player){
         int count = 0;
+        for(int i = 0; i < board.getHeight(); i++){
+            for(int j = 0; j < board.getWidth(); j++){
+                if(NotBlockedFour.checkHorizontally(j, i, board, player)){count++;}
+                if(NotBlockedFour.checkVertically(j, i, board, player)){count++;}
+                if(NotBlockedFour.checkAskewDown(j, i, board, player)){count++;}
+                if(NotBlockedFour.checkAskewUp(j, i, board, player)){count++;}
+            }
+        }
         return count;
     }
 
@@ -64,6 +80,14 @@ public class Evaluation {
      */
     public static int countBlockedTwo(Board board, Player player){
         int count = 0;
+        for(int i = 0; i < board.getHeight(); i++){
+            for(int j = 0; j < board.getWidth(); j++){
+                if(BlockedTwo.checkHorizontally(j, i, board, player)){count++;}
+                if(BlockedTwo.checkVertically(j, i, board, player)){count++;}
+                if(BlockedTwo.checkAskewDown(j, i, board, player)){count++;}
+                if(BlockedTwo.checkAskewUp(j, i, board, player)){count++;}
+            }
+        }
         return count;
     }
 
@@ -75,6 +99,14 @@ public class Evaluation {
      */
     public static int countBlockedThree(Board board, Player player){
         int count = 0;
+        for(int i = 0; i < board.getHeight(); i++){
+            for(int j = 0; j < board.getWidth(); j++){
+                if(BlockedThree.checkHorizontally(j, i, board, player)){count++;}
+                if(BlockedThree.checkVertically(j, i, board, player)){count++;}
+                if(BlockedThree.checkAskewDown(j, i, board, player)){count++;}
+                if(BlockedThree.checkAskewUp(j, i, board, player)){count++;}
+            }
+        }
         return count;
     }
 
@@ -86,6 +118,14 @@ public class Evaluation {
      */
     public static int countBlockedFour(Board board, Player player){
         int count = 0;
+        for(int i = 0; i < board.getHeight(); i++){
+            for(int j = 0; j < board.getWidth(); j++){
+                if(BlockedFour.checkHorizontally(j, i, board, player)){count++;}
+                if(BlockedFour.checkVertically(j, i, board, player)){count++;}
+                if(BlockedFour.checkAskewDown(j, i, board, player)){count++;}
+                if(BlockedFour.checkAskewUp(j, i, board, player)){count++;}
+            }
+        }
         return count;
     }
 }
@@ -94,35 +134,214 @@ public class Evaluation {
  * Klasa odpowiedzialna za rozpoznawanie blokowanych czwórek
  */
 class BlockedFour{
+    public static boolean checkHorizontally(int x, int y, Board board, Player player){
+        return false;
+    }
 
+    public static boolean checkVertically(int x, int y, Board board, Player player){
+        return false;
+    }
+
+    public static boolean checkAskewDown(int x, int y, Board board, Player player){
+        return false;
+    }
+
+    public static boolean checkAskewUp(int x, int y, Board board, Player player){
+        return false;
+    }
 }
 
 /**
  * Klasa odpowiedzialna za rozpoznawanie blokowanych trójek
  */
 class BlockedThree{
+    public static boolean checkHorizontally(int x, int y, Board board, Player player){
+        return false;
+    }
 
+    public static boolean checkVertically(int x, int y, Board board, Player player){
+        return false;
+    }
+
+    public static boolean checkAskewDown(int x, int y, Board board, Player player){
+        return false;
+    }
+
+    public static boolean checkAskewUp(int x, int y, Board board, Player player){
+        return false;
+    }
 }
 
 /**
  * Klasa odpowiedzialna za rozpoznawanie blokowanych dwójek
  */
 class BlockedTwo{
+    public static boolean checkHorizontally(int x, int y, Board board, Player player){
+        return false;
+    }
 
+    public static boolean checkVertically(int x, int y, Board board, Player player){
+        return false;
+    }
+
+    public static boolean checkAskewDown(int x, int y, Board board, Player player){
+        return false;
+    }
+
+    public static boolean checkAskewUp(int x, int y, Board board, Player player){
+        return false;
+    }
 }
 
 /**
  * Klasa odpowiedzialna za rozpoznawanie nieblokowanych czwórek
  */
-class NotBlockedFour{
+class NotBlockedFour {
+    public static boolean checkHorizontally(int x, int y, Board board, Player player) {
+        //sprawdzenie czy zewnętrzne pola istnieją
+        if(x - 1 < 0 || x + 4 >= board.getWidth()){return false;}
 
+        //sprawdzenie czy 3 kolejne pola są zajęte przez gracza
+        if(board.getField(x, y) == player.getId() &&
+                board.getField(x + 1, y) == player.getId() &&
+                board.getField(x + 2, y)== player.getId() &&
+                board.getField(x + 3, y)== player.getId()){
+
+            //sprawdzenie czy zewnętrzne pola są puste
+            if(board.getField(x - 1, y) == Const.EMPTY_FIELD && board.getField(x + 4, y) == Const.EMPTY_FIELD){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public static boolean checkVertically(int x, int y, Board board, Player player) {
+
+        //sprawdzenie czy zewnętrzne pola istnieją
+        if(y - 1 < 0 || y + 4 >= board.getHeight()){return false;}
+
+        //sprawdzenie czy 3 kolejne pola są zajęte przez gracza
+        if(board.getField(x, y) == player.getId() &&
+                board.getField(x, y + 1) == player.getId() &&
+                board.getField(x, y + 2)== player.getId() &&
+                board.getField(x, y + 3) == player.getId()){
+
+            //sprawdzenie czy zewnętrzne pola są puste
+            if(board.getField(x, y - 1) == Const.EMPTY_FIELD && board.getField(x, y + 4) == Const.EMPTY_FIELD){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public static boolean checkAskewDown(int x, int y, Board board, Player player) {
+        //sprawdzenie czy zewnętrzne pola istnieją
+        if(y - 1 < 0 || x - 1 < 0 || y + 4 >=board.getHeight() || x + 4 >= board.getWidth()){return false;}
+
+        //sprawdzenie czy 3 kolejne pola są zajęte przez gracza
+        if(board.getField(x, y) == player.getId() &&
+                board.getField(x + 1, y + 1) == player.getId() &&
+                board.getField(x + 2, y + 2) == player.getId() &&
+                board.getField(x + 3, y + 3) == player.getId()){
+
+            //sprawdzenie czy zewnętrzne pola są puste
+            if(board.getField(x - 1, y - 1) == Const.EMPTY_FIELD && board.getField(x + 4, y + 4) == Const.EMPTY_FIELD){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public static boolean checkAskewUp(int x, int y, Board board, Player player) {
+        //sprawdzenie czy zewnętrzne pola istnieją
+        if(y + 1 >= board.getHeight() || x - 1 < 0 || y - 4 < 0 || x + 4 >= board.getWidth()){return false;}
+
+        //sprawdzenie czy 3 kolejne pola są zajęte przez gracza
+        if(board.getField(x, y) == player.getId() &&
+                board.getField(x + 1, y - 1) == player.getId() &&
+                board.getField(x + 2, y - 2) == player.getId() &&
+                board.getField(x + 3, y - 3) == player.getId()){
+
+            //sprawdzenie czy zewnętrzne pola są puste
+            if(board.getField(x - 1, y + 1) == Const.EMPTY_FIELD && board.getField(x + 4, y - 4) == Const.EMPTY_FIELD){
+                return true;
+            }
+        }
+        return false;
+    }
 }
 
 /**
  * Klasa odpowiedzialna za rozpoznawanie nieblokowanych trójek
  */
 class NotBlockedThree{
+    public static boolean checkHorizontally(int x, int y, Board board, Player player){
+        //sprawdzenie czy zewnętrzne pola istnieją
+        if(x - 1 < 0 || x + 3 >= board.getWidth()){return false;}
 
+        //sprawdzenie czy 3 kolejne pola są zajęte przez gracza
+        if(board.getField(x, y) == player.getId() &&
+                board.getField(x + 1, y) == player.getId() &&
+                board.getField(x + 2, y)== player.getId()){
+
+            //sprawdzenie czy zewnętrzne pola są puste
+            if(board.getField(x - 1, y) == Const.EMPTY_FIELD && board.getField(x + 3, y) == Const.EMPTY_FIELD){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public static boolean checkVertically(int x, int y, Board board, Player player){
+
+        //sprawdzenie czy zewnętrzne pola istnieją
+        if(y - 1 < 0 || y + 3 >= board.getHeight()){return false;}
+
+        //sprawdzenie czy 3 kolejne pola są zajęte przez gracza
+        if(board.getField(x, y) == player.getId() &&
+                board.getField(x, y + 1) == player.getId() &&
+                board.getField(x, y + 2)== player.getId()){
+
+            //sprawdzenie czy zewnętrzne pola są puste
+            if(board.getField(x, y - 1) == Const.EMPTY_FIELD && board.getField(x, y + 3) == Const.EMPTY_FIELD){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public static boolean checkAskewDown(int x, int y, Board board, Player player){
+        //sprawdzenie czy zewnętrzne pola istnieją
+        if(y - 1 < 0 || x - 1 < 0 || y + 3 >=board.getHeight() || x + 3 >= board.getWidth()){return false;}
+
+        //sprawdzenie czy 3 kolejne pola są zajęte przez gracza
+        if(board.getField(x, y) == player.getId() &&
+                board.getField(x + 1, y + 1) == player.getId() &&
+                board.getField(x + 2, y + 2) == player.getId()){
+
+            //sprawdzenie czy zewnętrzne pola są puste
+            if(board.getField(x - 1, y - 1) == Const.EMPTY_FIELD && board.getField(x + 3, y + 3) == Const.EMPTY_FIELD){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public static boolean checkAskewUp(int x, int y, Board board, Player player){
+        //sprawdzenie czy zewnętrzne pola istnieją
+        if(y + 1 >= board.getHeight() || x - 1 < 0 || y - 3 < 0 || x + 3 >= board.getWidth()){return false;}
+
+        //sprawdzenie czy 3 kolejne pola są zajęte przez gracza
+        if(board.getField(x, y) == player.getId() &&
+                board.getField(x + 1, y - 1) == player.getId() &&
+                board.getField(x + 2, y - 2) == player.getId()){
+            //sprawdzenie czy zewnętrzne pola są puste
+            if(board.getField(x - 1, y + 1) == Const.EMPTY_FIELD && board.getField(x + 3, y - 3) == Const.EMPTY_FIELD){
+                return true;
+            }
+        }
+        return false;
+    }
 }
 
 /**

@@ -177,10 +177,66 @@ class BlockedThree{
  */
 class BlockedTwo{
     public static boolean checkHorizontally(int x, int y, Board board, Player player){
+        //sprawdzenie czy posiadamy wszystkie wymagane pola
+        if(x + 1 >= board.getWidth()){return false;}
+
+        //nie ma zewnętrznych pól
+        if(x - 1 < 0 && x + 2 >= board.getWidth()) {return false;}
+
+        if(board.getField(x, y) == player.getId() && board.getField(x + 1, y) == player.getId()){
+
+            //pierwsze zewnętrzne pole nie istnieje
+            if(x - 1 < 0){
+                //drugie pole wolne
+                if(board.getField(x + 2, y) == Const.EMPTY_FIELD) {return true;}
+            }
+
+            //drugie zewnętrzne pole nie istnieje
+            else if(x + 2 >= board.getWidth()){
+                //pierwsze pole wolne
+                if(board.getField(x - 1, y) == Const.EMPTY_FIELD) {return true;}
+            }
+
+            //obydwa pola istnieją
+            else{
+                //pierwsze pole wolne, drugie nie
+                if(board.getField(x - 1, y) == Const.EMPTY_FIELD && board.getField(x + 2, y) != Const.EMPTY_FIELD){return true;}
+                //drugie pole wolne, pierwsze nie
+                else if (board.getField(x - 1, y) != Const.EMPTY_FIELD && board.getField(x + 2, y) == Const.EMPTY_FIELD){return true;}
+            }
+        }
         return false;
     }
 
     public static boolean checkVertically(int x, int y, Board board, Player player){
+        //sprawdzenie czy posiadamy wszystkie wymagane pola
+        if(y + 1 >= board.getHeight()){return false;}
+
+        //nie ma zewnętrznych pól
+        if(y - 1 < 0 && y + 2 >= board.getHeight()) {return false;}
+
+        if(board.getField(x, y) == player.getId() && board.getField(x, y + 1) == player.getId()){
+
+            //pierwsze zewnętrzne pole nie istnieje
+            if(y - 1 < 0){
+                //drugie pole wolne
+                if(board.getField(x, y + 2) == Const.EMPTY_FIELD) {return true;}
+            }
+
+            //drugie zewnętrzne pole nie istnieje
+            else if(y + 2 >= board.getHeight()){
+                //pierwsze pole wolne
+                if(board.getField(x, y - 1) == Const.EMPTY_FIELD) {return true;}
+            }
+
+            //obydwa pola istnieją
+            else{
+                //pierwsze pole wolne, drugie nie
+                if(board.getField(x, y - 1) == Const.EMPTY_FIELD && board.getField(x, y + 2) != Const.EMPTY_FIELD){return true;}
+                //drugie pole wolne, pierwsze nie
+                else if (board.getField(x, y - 1) != Const.EMPTY_FIELD && board.getField(x, y + 2) == Const.EMPTY_FIELD){return true;}
+            }
+        }
         return false;
     }
 

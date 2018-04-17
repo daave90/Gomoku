@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e228dc0a-3cc0-400f-9108-73488e3c496d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ai/BolckedTwoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ai/Evaluation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ai/Evaluation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ai/BolckedTwoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/BolckedTwoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ai/EvaluationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/EvaluationTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -16,77 +17,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Evaluation.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ai/Evaluation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="243" column="21" lean-forward="true" selection-start-line="243" selection-start-column="21" selection-end-line="243" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#countNotBlockedTwo#0;class#Evaluation#0" />
-                <element signature="method#countNotBlockedThree#0;class#Evaluation#0" />
-                <element signature="method#countNotBlockedFour#0;class#Evaluation#0" />
-                <element signature="method#countBlockedTwo#0;class#Evaluation#0" />
-                <element signature="method#countBlockedThree#0;class#Evaluation#0" />
-                <element signature="method#countBlockedFour#0;class#Evaluation#0" />
-                <element signature="e#8264#8265#0" expanded="true" />
-                <element signature="e#8292#8293#0" expanded="true" />
-                <element signature="e#8375#8376#0" expanded="true" />
-                <element signature="e#8403#8404#0" expanded="true" />
-                <element signature="class#NotBlockedFour#0" />
-                <element signature="method#checkHorizontally#0;class#NotBlockedFour#0" />
-                <element signature="method#checkVertically#0;class#NotBlockedFour#0" />
-                <element signature="method#checkAskewDown#0;class#NotBlockedFour#0" />
-                <element signature="method#checkAskewUp#0;class#NotBlockedFour#0" />
-                <element signature="method#checkVertically#0;class#NotBlockedThree#0" />
-                <element signature="method#checkAskewDown#0;class#NotBlockedThree#0" />
-                <element signature="method#checkAskewUp#0;class#NotBlockedThree#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BolckedTwoTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ai/BolckedTwoTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="77" column="57" selection-start-line="77" selection-start-column="57" selection-end-line="77" selection-end-column="57" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BoardTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/data/BoardTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Board.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/data/Board.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="26" selection-start-line="26" selection-end-line="26" />
-              <folding>
-                <element signature="e#752#753#0" expanded="true" />
-                <element signature="e#785#786#0" expanded="true" />
-                <element signature="e#813#814#0" expanded="true" />
-                <element signature="e#1331#1332#0" expanded="true" />
-                <element signature="e#1360#1361#0" expanded="true" />
-                <element signature="e#1389#1390#0" expanded="true" />
-                <element signature="e#1417#1418#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -111,11 +42,11 @@
         <option value="$PROJECT_DIR$/src/main/java/data/ComputerPlayer.java" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/src/test/java/ai/NotBlockedThreeTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ai/EvaluationTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/data/Board.java" />
         <option value="$PROJECT_DIR$/src/test/java/data/BoardTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ai/Evaluation.java" />
         <option value="$PROJECT_DIR$/src/test/java/ai/BolckedTwoTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ai/Evaluation.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ai/EvaluationTest.java" />
       </list>
     </option>
   </component>
@@ -141,7 +72,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -217,6 +147,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -244,37 +175,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BolckedTwoTest.checkVerticallyTest">
+  <component name="RunManager" selected="JUnit.NotBlockedTwoTest">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="BoardTest.getFieldTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="gomoku" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="data.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="data" />
-      <option name="MAIN_CLASS_NAME" value="data.BoardTest" />
-      <option name="METHOD_NAME" value="getFieldTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="BolckedTwoTest.checkHorizontallyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BolckedTwoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="gomoku" />
       <extension name="coverage">
         <pattern>
@@ -286,8 +194,8 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="ai" />
       <option name="MAIN_CLASS_NAME" value="ai.BolckedTwoTest" />
-      <option name="METHOD_NAME" value="checkHorizontallyTest" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -297,30 +205,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="BolckedTwoTest.checkVerticallyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="gomoku" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ai.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="ai" />
-      <option name="MAIN_CLASS_NAME" value="ai.BolckedTwoTest" />
-      <option name="METHOD_NAME" value="checkVerticallyTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="EvaluationTest.countNotBlockedFourTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EvaluationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="gomoku" />
       <extension name="coverage">
         <pattern>
@@ -332,8 +217,8 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="ai" />
       <option name="MAIN_CLASS_NAME" value="ai.EvaluationTest" />
-      <option name="METHOD_NAME" value="countNotBlockedFourTest" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -343,7 +228,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="EvaluationTest.countNotBlockedThreeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EvaluationTest.evaluateTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="gomoku" />
       <extension name="coverage">
         <pattern>
@@ -355,8 +240,54 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="ai" />
       <option name="MAIN_CLASS_NAME" value="ai.EvaluationTest" />
-      <option name="METHOD_NAME" value="countNotBlockedThreeTest" />
+      <option name="METHOD_NAME" value="evaluateTest" />
       <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="NotBlockedThreeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gomoku" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ai.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="ai" />
+      <option name="MAIN_CLASS_NAME" value="ai.NotBlockedThreeTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="NotBlockedTwoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gomoku" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ai.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="ai" />
+      <option name="MAIN_CLASS_NAME" value="ai.NotBlockedTwoTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -418,19 +349,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list>
-      <item itemvalue="JUnit.EvaluationTest.countNotBlockedThreeTest" />
-      <item itemvalue="JUnit.EvaluationTest.countNotBlockedFourTest" />
-      <item itemvalue="JUnit.BoardTest.getFieldTest" />
-      <item itemvalue="JUnit.BolckedTwoTest.checkHorizontallyTest" />
-      <item itemvalue="JUnit.BolckedTwoTest.checkVerticallyTest" />
+      <item itemvalue="JUnit.BolckedTwoTest" />
+      <item itemvalue="JUnit.EvaluationTest" />
+      <item itemvalue="JUnit.EvaluationTest.evaluateTest" />
+      <item itemvalue="JUnit.NotBlockedThreeTest" />
+      <item itemvalue="JUnit.NotBlockedTwoTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BolckedTwoTest.checkVerticallyTest" />
-        <item itemvalue="JUnit.BolckedTwoTest.checkHorizontallyTest" />
-        <item itemvalue="JUnit.BoardTest.getFieldTest" />
-        <item itemvalue="JUnit.EvaluationTest.countNotBlockedFourTest" />
-        <item itemvalue="JUnit.EvaluationTest.countNotBlockedThreeTest" />
+        <item itemvalue="JUnit.NotBlockedTwoTest" />
+        <item itemvalue="JUnit.NotBlockedThreeTest" />
+        <item itemvalue="JUnit.EvaluationTest" />
+        <item itemvalue="JUnit.BolckedTwoTest" />
+        <item itemvalue="JUnit.EvaluationTest.evaluateTest" />
       </list>
     </recent_temporary>
   </component>
@@ -459,44 +390,50 @@
       <option name="project" value="LOCAL" />
       <updated>1523890451690</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Create half of BlockedTwo and tests">
+      <created>1523910454018</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1523910454018</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="NotBlockedThreeTest - 2018.04.16 at 16h 41m 51s.xml">
+    <history-entry file="EvaluationTest_evaluateTest - 2018.04.17 at 13h 26m 59s.xml">
+      <configuration name="EvaluationTest.evaluateTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EvaluationTest_evaluateTest - 2018.04.17 at 13h 27m 22s.xml">
+      <configuration name="EvaluationTest.evaluateTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EvaluationTest - 2018.04.17 at 13h 27m 34s.xml">
+      <configuration name="EvaluationTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EvaluationTest - 2018.04.17 at 13h 27m 50s.xml">
+      <configuration name="EvaluationTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EvaluationTest - 2018.04.17 at 13h 27m 55s.xml">
+      <configuration name="EvaluationTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EvaluationTest - 2018.04.17 at 13h 27m 59s.xml">
+      <configuration name="EvaluationTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BolckedTwoTest - 2018.04.17 at 13h 28m 07s.xml">
+      <configuration name="BolckedTwoTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EvaluationTest - 2018.04.17 at 13h 28m 10s.xml">
+      <configuration name="EvaluationTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NotBlockedThreeTest - 2018.04.17 at 13h 28m 17s.xml">
       <configuration name="NotBlockedThreeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="NotBlockedThreeTest - 2018.04.16 at 16h 44m 15s.xml">
-      <configuration name="NotBlockedThreeTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="EvaluationTest_countNotBlockedThreeTest - 2018.04.16 at 16h 44m 21s.xml">
-      <configuration name="EvaluationTest.countNotBlockedThreeTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="EvaluationTest_countNotBlockedThreeTest - 2018.04.16 at 16h 44m 46s.xml">
-      <configuration name="EvaluationTest.countNotBlockedThreeTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="EvaluationTest_countNotBlockedFourTest - 2018.04.16 at 16h 44m 52s.xml">
-      <configuration name="EvaluationTest.countNotBlockedFourTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="EvaluationTest_countNotBlockedFourTest - 2018.04.16 at 16h 45m 46s.xml">
-      <configuration name="EvaluationTest.countNotBlockedFourTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="EvaluationTest_countNotBlockedFourTest - 2018.04.16 at 16h 50m 18s.xml">
-      <configuration name="EvaluationTest.countNotBlockedFourTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BoardTest_getFieldTest - 2018.04.16 at 21h 21m 34s.xml">
-      <configuration name="BoardTest.getFieldTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BolckedTwoTest_checkHorizontallyTest - 2018.04.16 at 21h 53m 14s.xml">
-      <configuration name="BolckedTwoTest.checkHorizontallyTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BolckedTwoTest_checkHorizontallyTest - 2018.04.16 at 22h 01m 56s.xml">
-      <configuration name="BolckedTwoTest.checkHorizontallyTest" configurationId="JUnit" />
+    <history-entry file="NotBlockedTwoTest - 2018.04.17 at 13h 28m 22s.xml">
+      <configuration name="NotBlockedTwoTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-4" width="1368" height="773" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="2" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -532,14 +469,90 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Create Evaluate class (Not blocked two)" />
     <MESSAGE value="Create NotBlockedThree and NotBlockedFour implementations" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create NotBlockedThree and NotBlockedFour implementations" />
+    <MESSAGE value="Create half of BlockedTwo and tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create half of BlockedTwo and tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="19" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ai/Evaluation.java</url>
+          <line>81</line>
+          <properties />
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="26" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ai/Evaluation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3645">
+          <caret line="243" column="21" lean-forward="true" selection-start-line="243" selection-start-column="21" selection-end-line="243" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#countNotBlockedTwo#0;class#Evaluation#0" />
+            <element signature="method#countNotBlockedThree#0;class#Evaluation#0" />
+            <element signature="method#countNotBlockedFour#0;class#Evaluation#0" />
+            <element signature="method#countBlockedThree#0;class#Evaluation#0" />
+            <element signature="method#countBlockedFour#0;class#Evaluation#0" />
+            <element signature="method#checkHorizontally#0;class#BlockedFour#0" />
+            <element signature="method#checkVertically#0;class#BlockedFour#0" />
+            <element signature="method#checkAskewDown#0;class#BlockedFour#0" />
+            <element signature="method#checkAskewUp#0;class#BlockedFour#0" />
+            <element signature="method#checkHorizontally#0;class#BlockedThree#0" />
+            <element signature="method#checkVertically#0;class#BlockedThree#0" />
+            <element signature="method#checkAskewDown#0;class#BlockedThree#0" />
+            <element signature="method#checkAskewUp#0;class#BlockedThree#0" />
+            <element signature="method#checkHorizontally#0;class#BlockedTwo#0" />
+            <element signature="method#checkVertically#0;class#BlockedTwo#0" />
+            <element signature="method#checkAskewDown#0;class#BlockedTwo#0" />
+            <element signature="method#checkAskewUp#0;class#BlockedTwo#0" />
+            <element signature="class#NotBlockedFour#0" />
+            <element signature="method#checkHorizontally#0;class#NotBlockedFour#0" />
+            <element signature="method#checkVertically#0;class#NotBlockedFour#0" />
+            <element signature="method#checkAskewDown#0;class#NotBlockedFour#0" />
+            <element signature="method#checkAskewUp#0;class#NotBlockedFour#0" />
+            <element signature="class#NotBlockedThree#0" />
+            <element signature="method#checkAskewUp#0;class#NotBlockedThree#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/data/BoardTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/data/Board.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="e#752#753#0" expanded="true" />
+            <element signature="e#785#786#0" expanded="true" />
+            <element signature="e#813#814#0" expanded="true" />
+            <element signature="e#1331#1332#0" expanded="true" />
+            <element signature="e#1360#1361#0" expanded="true" />
+            <element signature="e#1389#1390#0" expanded="true" />
+            <element signature="e#1417#1418#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ai/BolckedTwoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1155">
+          <caret line="77" column="74" selection-start-line="77" selection-start-column="74" selection-end-line="77" selection-end-column="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ai/Evaluation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1425">
@@ -549,20 +562,26 @@
             <element signature="method#countNotBlockedTwo#0;class#Evaluation#0" />
             <element signature="method#countNotBlockedThree#0;class#Evaluation#0" />
             <element signature="method#countNotBlockedFour#0;class#Evaluation#0" />
-            <element signature="method#countBlockedTwo#0;class#Evaluation#0" />
             <element signature="method#countBlockedThree#0;class#Evaluation#0" />
             <element signature="method#countBlockedFour#0;class#Evaluation#0" />
-            <element signature="e#8264#8265#0" expanded="true" />
-            <element signature="e#8292#8293#0" expanded="true" />
-            <element signature="e#8375#8376#0" expanded="true" />
-            <element signature="e#8403#8404#0" expanded="true" />
+            <element signature="method#checkHorizontally#0;class#BlockedFour#0" />
+            <element signature="method#checkVertically#0;class#BlockedFour#0" />
+            <element signature="method#checkAskewDown#0;class#BlockedFour#0" />
+            <element signature="method#checkAskewUp#0;class#BlockedFour#0" />
+            <element signature="method#checkHorizontally#0;class#BlockedThree#0" />
+            <element signature="method#checkVertically#0;class#BlockedThree#0" />
+            <element signature="method#checkAskewDown#0;class#BlockedThree#0" />
+            <element signature="method#checkAskewUp#0;class#BlockedThree#0" />
+            <element signature="method#checkHorizontally#0;class#BlockedTwo#0" />
+            <element signature="method#checkVertically#0;class#BlockedTwo#0" />
+            <element signature="method#checkAskewDown#0;class#BlockedTwo#0" />
+            <element signature="method#checkAskewUp#0;class#BlockedTwo#0" />
             <element signature="class#NotBlockedFour#0" />
             <element signature="method#checkHorizontally#0;class#NotBlockedFour#0" />
             <element signature="method#checkVertically#0;class#NotBlockedFour#0" />
             <element signature="method#checkAskewDown#0;class#NotBlockedFour#0" />
             <element signature="method#checkAskewUp#0;class#NotBlockedFour#0" />
-            <element signature="method#checkVertically#0;class#NotBlockedThree#0" />
-            <element signature="method#checkAskewDown#0;class#NotBlockedThree#0" />
+            <element signature="class#NotBlockedThree#0" />
             <element signature="method#checkAskewUp#0;class#NotBlockedThree#0" />
           </folding>
         </state>
@@ -577,20 +596,26 @@
             <element signature="method#countNotBlockedTwo#0;class#Evaluation#0" />
             <element signature="method#countNotBlockedThree#0;class#Evaluation#0" />
             <element signature="method#countNotBlockedFour#0;class#Evaluation#0" />
-            <element signature="method#countBlockedTwo#0;class#Evaluation#0" />
             <element signature="method#countBlockedThree#0;class#Evaluation#0" />
             <element signature="method#countBlockedFour#0;class#Evaluation#0" />
-            <element signature="e#8264#8265#0" expanded="true" />
-            <element signature="e#8292#8293#0" expanded="true" />
-            <element signature="e#8375#8376#0" expanded="true" />
-            <element signature="e#8403#8404#0" expanded="true" />
+            <element signature="method#checkHorizontally#0;class#BlockedFour#0" />
+            <element signature="method#checkVertically#0;class#BlockedFour#0" />
+            <element signature="method#checkAskewDown#0;class#BlockedFour#0" />
+            <element signature="method#checkAskewUp#0;class#BlockedFour#0" />
+            <element signature="method#checkHorizontally#0;class#BlockedThree#0" />
+            <element signature="method#checkVertically#0;class#BlockedThree#0" />
+            <element signature="method#checkAskewDown#0;class#BlockedThree#0" />
+            <element signature="method#checkAskewUp#0;class#BlockedThree#0" />
+            <element signature="method#checkHorizontally#0;class#BlockedTwo#0" />
+            <element signature="method#checkVertically#0;class#BlockedTwo#0" />
+            <element signature="method#checkAskewDown#0;class#BlockedTwo#0" />
+            <element signature="method#checkAskewUp#0;class#BlockedTwo#0" />
             <element signature="class#NotBlockedFour#0" />
             <element signature="method#checkHorizontally#0;class#NotBlockedFour#0" />
             <element signature="method#checkVertically#0;class#NotBlockedFour#0" />
             <element signature="method#checkAskewDown#0;class#NotBlockedFour#0" />
             <element signature="method#checkAskewUp#0;class#NotBlockedFour#0" />
-            <element signature="method#checkVertically#0;class#NotBlockedThree#0" />
-            <element signature="method#checkAskewDown#0;class#NotBlockedThree#0" />
+            <element signature="class#NotBlockedThree#0" />
             <element signature="method#checkAskewUp#0;class#NotBlockedThree#0" />
           </folding>
         </state>
@@ -605,20 +630,26 @@
             <element signature="method#countNotBlockedTwo#0;class#Evaluation#0" />
             <element signature="method#countNotBlockedThree#0;class#Evaluation#0" />
             <element signature="method#countNotBlockedFour#0;class#Evaluation#0" />
-            <element signature="method#countBlockedTwo#0;class#Evaluation#0" />
             <element signature="method#countBlockedThree#0;class#Evaluation#0" />
             <element signature="method#countBlockedFour#0;class#Evaluation#0" />
-            <element signature="e#8264#8265#0" expanded="true" />
-            <element signature="e#8292#8293#0" expanded="true" />
-            <element signature="e#8375#8376#0" expanded="true" />
-            <element signature="e#8403#8404#0" expanded="true" />
+            <element signature="method#checkHorizontally#0;class#BlockedFour#0" />
+            <element signature="method#checkVertically#0;class#BlockedFour#0" />
+            <element signature="method#checkAskewDown#0;class#BlockedFour#0" />
+            <element signature="method#checkAskewUp#0;class#BlockedFour#0" />
+            <element signature="method#checkHorizontally#0;class#BlockedThree#0" />
+            <element signature="method#checkVertically#0;class#BlockedThree#0" />
+            <element signature="method#checkAskewDown#0;class#BlockedThree#0" />
+            <element signature="method#checkAskewUp#0;class#BlockedThree#0" />
+            <element signature="method#checkHorizontally#0;class#BlockedTwo#0" />
+            <element signature="method#checkVertically#0;class#BlockedTwo#0" />
+            <element signature="method#checkAskewDown#0;class#BlockedTwo#0" />
+            <element signature="method#checkAskewUp#0;class#BlockedTwo#0" />
             <element signature="class#NotBlockedFour#0" />
             <element signature="method#checkHorizontally#0;class#NotBlockedFour#0" />
             <element signature="method#checkVertically#0;class#NotBlockedFour#0" />
             <element signature="method#checkAskewDown#0;class#NotBlockedFour#0" />
             <element signature="method#checkAskewUp#0;class#NotBlockedFour#0" />
-            <element signature="method#checkVertically#0;class#NotBlockedThree#0" />
-            <element signature="method#checkAskewDown#0;class#NotBlockedThree#0" />
+            <element signature="class#NotBlockedThree#0" />
             <element signature="method#checkAskewUp#0;class#NotBlockedThree#0" />
           </folding>
         </state>
@@ -709,16 +740,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ai/NotBlockedTwoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="13" column="44" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="13" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/jvm/java-9-oracle/lib/src.zip!/java.base/java/lang/reflect/Method.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="139">
@@ -726,32 +747,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ai/NotBlockedThreeTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1890">
-          <caret line="126" column="26" selection-start-line="126" selection-start-column="26" selection-end-line="126" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ai/EvaluationTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#countNotBlockedTwoTest#0;class#EvaluationTest#0" />
-            <element signature="method#countNotBlockedThreeTest#0;class#EvaluationTest#0" />
-            <element signature="method#countNotBlockedFourTest#0;class#EvaluationTest#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/data/Board.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
+        <state relative-caret-position="390">
           <caret line="26" selection-start-line="26" selection-end-line="26" />
           <folding>
             <element signature="e#752#753#0" expanded="true" />
@@ -767,45 +765,88 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/data/BoardTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="15">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ai/Evaluation.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ai/NotBlockedTwoTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="243" column="21" lean-forward="true" selection-start-line="243" selection-start-column="21" selection-end-line="243" selection-end-column="21" />
+        <state relative-caret-position="270">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#countNotBlockedTwo#0;class#Evaluation#0" />
-            <element signature="method#countNotBlockedThree#0;class#Evaluation#0" />
-            <element signature="method#countNotBlockedFour#0;class#Evaluation#0" />
-            <element signature="method#countBlockedTwo#0;class#Evaluation#0" />
-            <element signature="method#countBlockedThree#0;class#Evaluation#0" />
-            <element signature="method#countBlockedFour#0;class#Evaluation#0" />
-            <element signature="e#8264#8265#0" expanded="true" />
-            <element signature="e#8292#8293#0" expanded="true" />
-            <element signature="e#8375#8376#0" expanded="true" />
-            <element signature="e#8403#8404#0" expanded="true" />
-            <element signature="class#NotBlockedFour#0" />
-            <element signature="method#checkHorizontally#0;class#NotBlockedFour#0" />
-            <element signature="method#checkVertically#0;class#NotBlockedFour#0" />
-            <element signature="method#checkAskewDown#0;class#NotBlockedFour#0" />
-            <element signature="method#checkAskewUp#0;class#NotBlockedFour#0" />
-            <element signature="method#checkVertically#0;class#NotBlockedThree#0" />
-            <element signature="method#checkAskewDown#0;class#NotBlockedThree#0" />
-            <element signature="method#checkAskewUp#0;class#NotBlockedThree#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ai/NotBlockedThreeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1890">
+          <caret line="126" column="26" selection-start-line="126" selection-start-column="26" selection-end-line="126" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ai/EvaluationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#evaluateTest#0;class#EvaluationTest#0" />
+            <element signature="method#countNotBlockedTwoTest#0;class#EvaluationTest#0" />
+            <element signature="method#countNotBlockedThreeTest#0;class#EvaluationTest#0" />
+            <element signature="method#countNotBlockedFourTest#0;class#EvaluationTest#0" />
+            <element signature="method#countBlockedTwoTest#0;class#EvaluationTest#0" />
+            <element signature="method#countBlockedThreeTest#0;class#EvaluationTest#0" />
+            <element signature="method#countBlockedFourTest#0;class#EvaluationTest#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ai/BolckedTwoTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="77" column="57" selection-start-line="77" selection-start-column="57" selection-end-line="77" selection-end-column="57" />
+        <state relative-caret-position="165">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ai/Evaluation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="83" selection-start-line="83" selection-end-line="83" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#countNotBlockedTwo#0;class#Evaluation#0" />
+            <element signature="method#countNotBlockedThree#0;class#Evaluation#0" />
+            <element signature="method#countNotBlockedFour#0;class#Evaluation#0" />
+            <element signature="method#countBlockedThree#0;class#Evaluation#0" />
+            <element signature="method#countBlockedFour#0;class#Evaluation#0" />
+            <element signature="method#checkHorizontally#0;class#BlockedFour#0" />
+            <element signature="method#checkVertically#0;class#BlockedFour#0" />
+            <element signature="method#checkAskewDown#0;class#BlockedFour#0" />
+            <element signature="method#checkAskewUp#0;class#BlockedFour#0" />
+            <element signature="method#checkHorizontally#0;class#BlockedThree#0" />
+            <element signature="method#checkVertically#0;class#BlockedThree#0" />
+            <element signature="method#checkAskewDown#0;class#BlockedThree#0" />
+            <element signature="method#checkAskewUp#0;class#BlockedThree#0" />
+            <element signature="method#checkHorizontally#0;class#BlockedTwo#0" />
+            <element signature="method#checkVertically#0;class#BlockedTwo#0" />
+            <element signature="method#checkAskewDown#0;class#BlockedTwo#0" />
+            <element signature="method#checkAskewUp#0;class#BlockedTwo#0" />
+            <element signature="class#NotBlockedFour#0" />
+            <element signature="method#checkHorizontally#0;class#NotBlockedFour#0" />
+            <element signature="method#checkVertically#0;class#NotBlockedFour#0" />
+            <element signature="method#checkAskewDown#0;class#NotBlockedFour#0" />
+            <element signature="method#checkAskewUp#0;class#NotBlockedFour#0" />
+            <element signature="class#NotBlockedThree#0" />
+            <element signature="method#checkAskewUp#0;class#NotBlockedThree#0" />
           </folding>
         </state>
       </provider>

@@ -2,6 +2,9 @@ package data;
 
 import utils.Const;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Klasa reprezentująca planszę. Posiada pola przechowujące szerokość i wysokość planszy
  * Posiada również funkcję sprawdzającą czy został wyłoniony zwycięzca
@@ -126,5 +129,77 @@ public class Board {
             y--;
         }
         return true;
+    }
+
+    /**
+     * Funkcja zwraca listę pustych pól
+     * @return
+     */
+    public List<Field> getEmpties(){
+        List<Field> empties = new ArrayList<>();
+
+        for (int i = 0; i < width; i++){
+            for(int j = 0; j < height; j++){
+                if(board[i][j] == Const.EMPTY_FIELD){
+                    empties.add(new Field(board[i][j], i , j));
+                }
+            }
+        }
+
+        return empties;
+    }
+
+    /**
+     * Funkcja zwraca pola sąsiadujące z przekazanym w argumencie polem
+     * @param field
+     * @return
+     */
+    public List<Field> lookAround(Field field){
+
+        List<Field> fields = new ArrayList<>();
+
+        int x = field.getX();
+        int y = field.getY();
+
+        if(x + 1 < width){
+
+            //prawy
+            fields.add(new Field(board[x + 1][y], x + 1, y));
+
+            if(y + 1 < height){
+                // prawy dolny róg
+                fields.add(new Field(board[x + 1][y + 1], x + 1, y + 1));
+            }
+
+            if(y - 1 >= 0){
+                //prawy górny róg
+                fields.add(new Field(board[x + 1][y - 1], x + 1, y - 1));
+            }
+        }
+        if(x - 1 >= 0){
+
+            //lewy
+            fields.add(new Field(board[x - 1][y], x - 1, y));
+
+            if(y + 1 < height){
+                // lewy dolny róg
+                fields.add(new Field(board[x - 1][y + 1], x - 1, y + 1));
+            }
+
+            if(y - 1 >= 0){
+                //lewy górny róg
+                fields.add(new Field(board[x - 1][y - 1], x - 1, y - 1));
+            }
+        }
+        if(y + 1 < height){
+            //dół
+            fields.add(new Field(board[x][y + 1], x, y + 1));
+        }
+        if(y - 1 >= 0){
+            //góra
+            fields.add(new Field(board[x][y - 1], x, y - 1));
+        }
+
+        return fields;
     }
 }

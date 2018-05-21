@@ -10,9 +10,9 @@ public class BolckedTwoTest {
 
     @Test
     public void checkHorizontallyTest(){
-        Board board = new Board(6,6);
         Player player1 = new HumanPalyer(1);
         Player player2 = new HumanPalyer(2);
+        Board board = new Board(6,6, player1, player2);
 
         board.setMove(0,0,player1);
         board.setMove(1,0,player1);
@@ -45,9 +45,9 @@ public class BolckedTwoTest {
 
     @Test
     public void checkVerticallyTest(){
-        Board board = new Board(6,6);
         Player player1 = new HumanPalyer(1);
         Player player2 = new HumanPalyer(2);
+        Board board = new Board(6,6, player1, player2);
 
         board.setMove(0,0,player1);
         board.setMove(0,1,player1);
@@ -80,9 +80,9 @@ public class BolckedTwoTest {
 
     @Test
     public void checkAskewDownTest(){
-        Board board = new Board(8,8);
         Player player1 = new HumanPalyer(1);
         Player player2 = new HumanPalyer(2);
+        Board board = new Board(8,8, player1, player2);
 
         board.setMove(6,0,player1);
         board.setMove(7,1,player1);
@@ -111,9 +111,9 @@ public class BolckedTwoTest {
 
     @Test
     public void checkAskewUpTest(){
-        Board board = new Board(8,8);
         Player player1 = new HumanPalyer(1);
         Player player2 = new HumanPalyer(2);
+        Board board = new Board(8,8, player1, player2);
 
         board.setMove(0,1,player1);
         board.setMove(1,0,player1);

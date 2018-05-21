@@ -10,9 +10,9 @@ public class EvaluationTest {
 
     @Test
     public void evaluateTest(){
-        Board board = new Board(15, 15);
         Player player1 = new HumanPalyer(1);
         Player player2 = new HumanPalyer(2);
+        Board board = new Board(15, 15, player1, player2);
 
         board.setMove(1,1,player1);
         board.setMove(2,1,player1);
@@ -66,8 +66,9 @@ public class EvaluationTest {
 
     @Test
     public void countNotBlockedTwoTest(){
-        Board board = new Board(8,8);
         Player player1 = new HumanPalyer(1);
+        Player player2 = new HumanPalyer(2);
+        Board board = new Board(8,8 , player1, player2);
 
         board.setMove(1,1,player1);
         board.setMove(2,1,player1);
@@ -91,8 +92,9 @@ public class EvaluationTest {
 
     @Test
     public void countNotBlockedThreeTest(){
-        Board board = new Board(5,5);
         Player player1 = new HumanPalyer(1);
+        Player player2 = new HumanPalyer(2);
+        Board board = new Board(5,5 , player1, player2);
 
         board.setMove(1,1,player1);
         board.setMove(2,1,player1);
@@ -107,8 +109,10 @@ public class EvaluationTest {
 
     @Test
     public void countNotBlockedFourTest(){
-        Board board = new Board(8,8);
         Player player1 = new HumanPalyer(1);
+        Player player2 = new HumanPalyer(2);
+
+        Board board = new Board(8,8 , player1, player2);
 
         board.setMove(1,1,player1);
         board.setMove(2,1,player1);
@@ -131,9 +135,9 @@ public class EvaluationTest {
 
     @Test
     public void countBlockedTwoTest(){
-        Board board = new Board(8,8);
         Player player1 = new HumanPalyer(1);
         Player player2 = new HumanPalyer(2);
+        Board board = new Board(8,8, player1, player2);
 
         board.setMove(3,1,player2);
         board.setMove(3,3,player2);
@@ -155,9 +159,9 @@ public class EvaluationTest {
 
     @Test
     public void countBlockedThreeTest(){
-        Board board = new Board(8,8);
         Player player1 = new HumanPalyer(1);
         Player player2 = new HumanPalyer(2);
+        Board board = new Board(8,8, player1, player2);
 
         board.setMove(1,0,player2);
         board.setMove(0,1,player2);
@@ -185,9 +189,9 @@ public class EvaluationTest {
 
     @Test
     public void countBlockedFourTest(){
-        Board board = new Board(8,8);
         Player player1 = new HumanPalyer(1);
         Player player2 = new HumanPalyer(2);
+        Board board = new Board(8,8, player1, player2);
 
         board.setMove(0,0,player2);
         board.setMove(1,0,player2);

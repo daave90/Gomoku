@@ -15,6 +15,10 @@ public class Field {
         return value;
     }
 
+    public void setValue(int value) {
+        this.value = value;
+    }
+
     public int getX() {
         return x;
     }

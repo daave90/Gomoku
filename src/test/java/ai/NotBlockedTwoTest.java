@@ -9,9 +9,9 @@ import org.junit.Test;
 public class NotBlockedTwoTest {
     @Test
     public void isNotBlocked2HorizontallyTest(){
-        Board board = new Board(6,6);
         Player player1 = new HumanPalyer(1);
         Player player2 = new HumanPalyer(2);
+        Board board = new Board(6,6, player1, player2);
 
         board.setMove(1,0,player1);
         board.setMove(2,0,player1);
@@ -43,9 +43,9 @@ public class NotBlockedTwoTest {
 
     @Test
     public void isNotBlocked2VerticallyTest(){
-        Board board = new Board(6,6);
         Player player1 = new HumanPalyer(1);
         Player player2 = new HumanPalyer(2);
+        Board board = new Board(6,6 , player1, player2);
 
         board.setMove(0,0,player1);
         board.setMove(0,1,player1);
@@ -77,9 +77,9 @@ public class NotBlockedTwoTest {
 
     @Test
     public void isNotBlocked2AskewDown(){
-        Board board = new Board(6,6);
         Player player1 = new HumanPalyer(1);
         Player player2 = new HumanPalyer(2);
+        Board board = new Board(6,6, player1, player2);
 
         board.setMove(0,0,player1);
         board.setMove(1,1,player1);
@@ -108,9 +108,9 @@ public class NotBlockedTwoTest {
 
     @Test
     public void isNotBlocked2AskewUp(){
-        Board board = new Board(6,6);
         Player player1 = new HumanPalyer(1);
         Player player2 = new HumanPalyer(2);
+        Board board = new Board(6,6, player1, player2);
 
         board.setMove(0,0,player1);
         Assert.assertFalse(NotBlockedTwo.checkAskewUp(0,0,board,player1));

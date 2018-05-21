@@ -11,5 +11,5 @@ public abstract class Player {
         return id;
     }
 
-    public abstract Board makeMove();
+    public abstract void makeMove(Board board);
 }

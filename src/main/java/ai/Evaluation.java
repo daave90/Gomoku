@@ -6,7 +6,7 @@ import utils.Const;
 
 public class Evaluation {
 
-    public static int evaluate(Board board, Player player){
+    public static double evaluate(Board board, Player player){
         return countNotBlockedTwo(board, player) * 100 +
                 countNotBlockedThree(board, player) * 200 +
                 countNotBlockedFour(board, player) * 300 +

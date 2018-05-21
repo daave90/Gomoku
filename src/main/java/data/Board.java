@@ -13,10 +13,15 @@ public class Board {
     private int [][] board;
     private int height;
     private int width;
+    private Player nextPlayer;
+    private Player prevPlayer;
 
-    public Board(int height, int width){
+
+    public Board(int height, int width, Player nextPlayer, Player prevPlayer){
         this.height = height;
         this.width = width;
+        this.nextPlayer = nextPlayer;
+        this.prevPlayer = prevPlayer;
 
         board = new int[width][height]; // stworzenie nowej planszy
         for(int i = 0; i < width; i++){ // ustawienie pustej wartości dla każdego pola
@@ -24,6 +29,12 @@ public class Board {
                 board[i][j] = Const.EMPTY_FIELD;
             }
         }
+    }
+
+    public Board copyBoard(){
+        Board newBoard = new Board(this.height, this.width, this.nextPlayer, this.prevPlayer);
+        newBoard.setBoard(this.board);
+        return newBoard;
     }
 
     public int getField(int x, int y){
@@ -43,6 +54,8 @@ public class Board {
     public void setMove(int x, int y, Player player){
         if(x < width && y < height){
             board[x][y] = player.getId();
+            this.nextPlayer = prevPlayer;
+            this.prevPlayer = player;
         }
         else{
             throw new IndexOutOfBoundsException("Plansza nie posiada takich współrzędnych");
@@ -57,78 +70,20 @@ public class Board {
         return width;
     }
 
-    /**
-     * Funkcja sprawdza czy jeden z graczy zwyciężył
-     * @param player - gracz który ma zostać sprawdzony pod kątem zwycięstwa
-     * @return true - jeżeli wskazany gracz wygrał, false - w przeciwnym wypadku
-     */
-    public boolean isWinner(Player player){
-        for(int i = 0; i < width; i++){
-            for(int j = 0; j < height; j++){
-                if(checkHorizontally(i, j, player) || checkVertically(i, j, player) || checkAskewDown(i, j, player) || checkAskewUp(i, j, player)){
-                    return true;
-                }
-            }
-        }
-        return false;
+    public Player getNextPlayer() {
+        return nextPlayer;
     }
 
-    /**
-     *Funkcja sprawdza wygraną w linji poziomej prowadzonej od punktu o współrzędnych (x, y)
-     */
-    private boolean checkHorizontally(int x, int y, Player player){
-        for(int i = x; i < x + 4; i++){
-            //jeżeli nie ma ciągłości w którymś momencie sprawdzania
-            //lub nie można sprawdzić pięciu pól bo następuje koniec planszy, zwróć false
-            if(board[i][y] != player.getId() || i + 1 >= width){
-                return false;
+    private void setBoard(int[][] board) {
+        for(int i = 0; i < this.width; i++){
+            for(int j = 0; j < this.height; j++){
+                this.board[i][j] = board[i][j];
             }
         }
-        return true;
     }
 
-    /**
-     *Funkcja sprawdza wygraną w linji pionowej prowadzonej od punktu o współrzędnych (x, y)
-     */
-    private boolean checkVertically(int x, int y, Player player){
-        for(int i = y; i < y + 4; i++){
-            //jeżeli nie ma ciągłości w którymś momencie sprawdzania
-            //lub nie można sprawdzić pięciu pól bo następuje koniec planszy, zwróć false
-            if(board[x][i] != player.getId() || i + 1 >= height){
-                return false;
-            }
-        }
-        return true;
-    }
-
-    /**
-     *Funkcja sprawdza wygraną w linji ukośnej prowadzonej w dół od punktu o współrzędnych (x, y)
-     */
-    private boolean checkAskewDown(int x, int y, Player player){
-        for(int i = x; i < x + 4; i++){
-            //jeżeli nie ma ciągłości w którymś momencie sprawdzania
-            //lub nie można sprawdzić pięciu pól bo następuje koniec planszy, zwróć false
-            if(board[i][y] != player.getId() || i + 1 >=width || y + 1 >= height){
-                return false;
-            }
-            y++;
-        }
-        return true;
-    }
-
-    /**
-     *Funkcja sprawdza wygraną w linji ukośnej prowadzonej w górę od punktu o współrzędnych (x, y)
-     */
-    private boolean checkAskewUp(int x, int y, Player player){
-        for(int i = x; i < x + 4; i++){
-            //jeżeli nie ma ciągłości w którymś momencie sprawdzania
-            //lub nie można sprawdzić pięciu pól bo następuje koniec planszy, zwróć false
-            if(board[i][y] != player.getId() || i + 1 >=width || y - 1 < 0){
-                return false;
-            }
-            y--;
-        }
-        return true;
+    public Player getPrevPlayer() {
+        return prevPlayer;
     }
 
     /**
@@ -198,6 +153,23 @@ public class Board {
         if(y - 1 >= 0){
             //góra
             fields.add(new Field(board[x][y - 1], x, y - 1));
+        }
+
+        return fields;
+    }
+
+    /**
+     * Funkcja zwraca pola zajęte przez gracza
+     */
+    public List<Field> getPlayerPlaces(Player player){
+        List<Field> fields = new ArrayList<>();
+
+        for(int i = 0; i < width; i++){
+            for(int j = 0; j < height; j++){
+                if(board[i][j] == player.getId()){
+                    fields.add(new Field(player.getId(), i, j));
+                }
+            }
         }
 
         return fields;

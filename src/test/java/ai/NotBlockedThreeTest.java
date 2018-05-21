@@ -9,7 +9,9 @@ import org.junit.Test;
 public class NotBlockedThreeTest {
     @Test
     public void checkHorizontallyTest(){
-        Board board = new Board(6,6);
+        Player player = new HumanPalyer(1);
+        Player prevPlayer = new HumanPalyer(2);
+        Board board = new Board(6,6,player, prevPlayer);
         Player player1 = new HumanPalyer(1);
         Player player2 = new HumanPalyer(2);
 
@@ -43,7 +45,9 @@ public class NotBlockedThreeTest {
 
     @Test
     public void checkVerticallyTest(){
-        Board board = new Board(6,6);
+        Player player = new HumanPalyer(1);
+        Player prevPlayer = new HumanPalyer(2);
+        Board board = new Board(6,6,player, prevPlayer);
         Player player1 = new HumanPalyer(1);
         Player player2 = new HumanPalyer(2);
 
@@ -77,7 +81,9 @@ public class NotBlockedThreeTest {
 
     @Test
     public void checkAskewUpTest(){
-        Board board = new Board(6,6);
+        Player player = new HumanPalyer(1);
+        Player prevPlayer = new HumanPalyer(2);
+        Board board = new Board(6,6,player, prevPlayer);
         Player player1 = new HumanPalyer(1);
         Player player2 = new HumanPalyer(2);
 
@@ -106,7 +112,9 @@ public class NotBlockedThreeTest {
 
     @Test
     public void checkAskewDownTest(){
-        Board board = new Board(6,6);
+        Player player = new HumanPalyer(1);
+        Player prevPlayer = new HumanPalyer(2);
+        Board board = new Board(6,6,player, prevPlayer);
         Player player1 = new HumanPalyer(1);
         Player player2 = new HumanPalyer(2);
 

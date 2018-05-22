@@ -1,7 +1,6 @@
 package gui;
 
-import data.Board;
-import data.Player;
+import data.*;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.geometry.Pos;
@@ -96,5 +95,66 @@ public class GameController {
         Const.currentStage.close();
         Const.currentStage = stage;
         Const.currentStage.show();
+    }
+
+    @FXML
+    public void onStartGame(){
+        startGame(logicBoard.getNextPlayer(), logicBoard.getPrevPlayer());
+    }
+
+    private void startGame(Player first, Player second){
+        if(first instanceof ComputerPlayer && second instanceof ComputerPlayer){
+            computerVsComputer(first, second);
+        }
+        else if(first instanceof HumanPalyer && second instanceof HumanPalyer){
+            humanVsHuman(first, second);
+        }
+        else if((first instanceof HumanPalyer && second instanceof ComputerPlayer) ||
+                (first instanceof ComputerPlayer && second instanceof HumanPalyer)){
+            computerVsHuman(first, second);
+        }
+    }
+
+    private void computerVsComputer(Player first, Player second){
+        while(!WinnerFinder.isWinner(logicBoard, first) &&
+                !WinnerFinder.isWinner(logicBoard, second) &&
+                !logicBoard.getEmpties().isEmpty()){
+
+            first.makeMove(logicBoard);
+            parseBoard(logicBoard);
+            if(WinnerFinder.isWinner(logicBoard, first)){
+                if(first.getId() == 1){
+                    DialogUtils.getInformationDialog("Koniec gry", "Białe zwyciężyły");
+                }
+                else{
+                    DialogUtils.getInformationDialog("Koniec gry", "Czarne zwyciężyły");
+                }
+                break;
+            }
+
+            second.makeMove(logicBoard);
+            parseBoard(logicBoard);
+            if(WinnerFinder.isWinner(logicBoard, second)){
+                if(second.getId() == 1){
+                    DialogUtils.getInformationDialog("Koniec gry", "Białe zwyciężyły!!!");
+                }
+                else{
+                    DialogUtils.getInformationDialog("Koniec gry", "Czarne zwyciężyły!!!");
+                }
+                break;
+            }
+        }
+
+        if(logicBoard.getEmpties().isEmpty()){
+            DialogUtils.getInformationDialog("Koniec gry", "Rozgrywka zakończona remisem!!!");
+        }
+    }
+
+    private void humanVsHuman(Player first, Player second){
+
+    }
+
+    private void computerVsHuman(Player first, Player second){
+
     }
 }

@@ -1,6 +1,5 @@
 package gui;
 
-import javafx.application.Platform;
 import javafx.scene.control.Alert;
 import javafx.scene.control.TextArea;
 
@@ -15,6 +14,13 @@ public class DialogUtils {
         errorDialog.setHeaderText("Wystapil blad podczas dzialania programu.");
         TextArea textArea = new TextArea(message);
         errorDialog.getDialogPane().setContent(textArea);
+        errorDialog.showAndWait();
+    }
+
+    public static void getInformationDialog(String header, String message){
+        Alert errorDialog = new Alert(Alert.AlertType.INFORMATION);
+        errorDialog.setTitle(header);
+        errorDialog.setHeaderText(message);
         errorDialog.showAndWait();
     }
 }

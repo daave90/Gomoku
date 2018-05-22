@@ -1,3 +1,6 @@
+import data.Board;
+import data.ComputerPlayer;
+import data.WinnerFinder;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;

@@ -45,7 +45,7 @@ public class MinMax {
         Field bestMove = new Field(0,0,0);
 
         //jeżeli liść drzewa to zwróć ocenę węzła
-        if(deep == 0){
+        if(deep == 0 || moveList.size() == 1){
             Object[] pick = {Evaluation.evaluate(board, board.getNextPlayer()), moveList.get(0)};
             return pick;
         }

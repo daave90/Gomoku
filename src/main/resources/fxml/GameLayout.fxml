@@ -44,7 +44,7 @@
    <top>
       <HBox alignment="CENTER" prefHeight="32.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
-            <Button mnemonicParsing="false" onAction="#onStartGame" prefHeight="39.0" prefWidth="105.0" text="Start">
+            <Button fx:id="newGameButton" mnemonicParsing="false" onAction="#onStartGame" prefHeight="39.0" prefWidth="105.0" text="Start">
                <font>
                   <Font size="18.0" />
                </font>

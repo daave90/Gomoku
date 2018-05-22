@@ -18,6 +18,16 @@ public class ComputerPlayer extends Player {
         this.deep = deep;
     }
 
+    public void firstMove(Board board){
+        int width = board.getWidth();
+        int height = board.getHeight();
+
+        int x = width / 2;
+        int y = height / 2;
+
+        board.setMove(x,y,this);
+    }
+
     @Override
     public void makeMove(Board board) {
         Object[] move = minMax.doMinMaxAlfaBeta(board, deep, Double.NEGATIVE_INFINITY, Double.POSITIVE_INFINITY);

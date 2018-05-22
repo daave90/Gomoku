@@ -2,8 +2,6 @@ package gui;
 
 import data.ComputerPlayer;
 import data.HumanPalyer;
-import data.Player;
-import data.WinnerFinder;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;

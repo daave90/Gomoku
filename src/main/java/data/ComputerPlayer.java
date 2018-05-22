@@ -8,6 +8,10 @@ public class ComputerPlayer extends Player {
     private MinMax minMax;
     private int deep;
 
+    public ComputerPlayer(int id){
+        super(id);
+    }
+
     public ComputerPlayer(int id, int deep){
         super(id);
         this.minMax = new MinMax();

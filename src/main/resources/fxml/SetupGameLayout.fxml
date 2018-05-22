@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="322.0" prefWidth="471.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.SetupGameController">
+   <center>
+      <VBox alignment="CENTER" prefHeight="565.0" prefWidth="479.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="31.0" prefWidth="600.0">
+               <children>
+                  <Label fx:id="playerOneLabel" text="Gracz 1">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="playerTwoLabel" text="Gracz 2">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="42.0" prefWidth="600.0">
+               <children>
+                  <ComboBox fx:id="playerOneType" onAction="#choosePlayerType" prefHeight="25.0" prefWidth="100.0">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </ComboBox>
+                  <ComboBox fx:id="playerTwoType" onAction="#choosePlayerType" prefWidth="100.0">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </ComboBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="42.0" prefWidth="600.0">
+               <children>
+                  <Label fx:id="playerOneDeepLabel" text="Głębokość przeszukiwania:">
+                     <HBox.margin>
+                        <Insets right="3.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="playerOneDeep" prefHeight="25.0" prefWidth="50.0">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Label fx:id="playerTwoDeepLabel" text="Głębokość przeszukiwania:">
+                     <HBox.margin>
+                        <Insets left="10.0" right="3.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="playerTwoDeep" prefHeight="25.0" prefWidth="50.0">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="42.0" prefWidth="600.0">
+               <children>
+                  <Button fx:id="createPlayers" mnemonicParsing="false" onAction="#createPlayers" text="Stwórz graczy">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="42.0" prefWidth="600.0">
+               <children>
+                  <Label fx:id="boardLabel" prefHeight="20.0" prefWidth="48.0" text="Plansza">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="42.0" prefWidth="600.0">
+               <children>
+                  <Label fx:id="boardHeightLabel" text="Wysokość:">
+                     <HBox.margin>
+                        <Insets right="3.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="boardHeight" prefHeight="25.0" prefWidth="50.0">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Label fx:id="boardWidthLabel" text="Szerokość:">
+                     <HBox.margin>
+                        <Insets left="10.0" right="3.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="boardWidth" prefHeight="25.0" prefWidth="50.0">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="25.0" prefWidth="479.0">
+               <children>
+                  <Button fx:id="newGameButton" mnemonicParsing="false" onAction="#startNewGame" text="Rozpocznij grę">
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

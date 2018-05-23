@@ -136,7 +136,7 @@ public class GameController {
 
     private void computerVsComputer(ComputerPlayer first, ComputerPlayer second){
 
-        //long start = System.currentTimeMillis();
+        long start = System.currentTimeMillis();
         ComputerPlayer computerPlayer = (ComputerPlayer) logicBoard.getNextPlayer();
         computerPlayer.firstMove(logicBoard);
         parseBoard(logicBoard);
@@ -154,25 +154,33 @@ public class GameController {
 
         if(WinnerFinder.isWinner(logicBoard, logicBoard.getPrevPlayer())){
             if(logicBoard.getPrevPlayer().getId() == Const.FIRST_PLAYER_ID){
-                DialogUtils.getInformationDialog("Koniec gry", "Białe zwyciężyły!!!");
+                long stop = System.currentTimeMillis();
+                long time = stop - start;
+                DialogUtils.getInformationDialog("Koniec gry", "Białe zwyciężyły!!! (" + time + " ms)");
             }
             else{
-                DialogUtils.getInformationDialog("Koniec gry", "Czarne zwyciężyły!!!");
+                long stop = System.currentTimeMillis();
+                long time = stop - start;
+                DialogUtils.getInformationDialog("Koniec gry", "Czarne zwyciężyły!!! (" + time + " ms)");
             }
         }
         else if(WinnerFinder.isWinner(logicBoard, logicBoard.getNextPlayer())){
             if(logicBoard.getNextPlayer().getId() == Const.FIRST_PLAYER_ID){
-                DialogUtils.getInformationDialog("Koniec gry", "Białe zwyciężyły!!!");
+                long stop = System.currentTimeMillis();
+                long time = stop - start;
+                DialogUtils.getInformationDialog("Koniec gry", "Białe zwyciężyły!!! (" + time + " ms)");
             }
             else{
-                DialogUtils.getInformationDialog("Koniec gry", "Czarne zwyciężyły!!!");
+                long stop = System.currentTimeMillis();
+                long time = stop - start;
+                DialogUtils.getInformationDialog("Koniec gry", "Czarne zwyciężyły!!! (" + time + " ms)");
             }
         }
         else if(logicBoard.getEmpties().isEmpty()){
-            DialogUtils.getInformationDialog("Koniec gry", "Rozgrywka zakończona remisem!!!");
+            long stop = System.currentTimeMillis();
+            long time = stop - start;
+            DialogUtils.getInformationDialog("Koniec gry", "Rozgrywka zakończona remisem!!! (" + time + " ms)");
         }
-        //long stop = System.currentTimeMillis();
-        //System.out.println(stop - start);
     }
 
     private void humanVsHuman(){

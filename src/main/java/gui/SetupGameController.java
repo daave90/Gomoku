@@ -227,7 +227,7 @@ public class SetupGameController {
 
         newGameButton.setDisable(true);
 
-        Scene scene = new Scene(FxmlUtils.fxmlLoad("/fxml/gameLayout.fxml"));
+        Scene scene = new Scene(FxmlUtils.fxmlLoad("/fxml/GameLayout.fxml"));
         Gomoku.stage.setScene(scene);
         Gomoku.stage.setMaximized(true);
     }

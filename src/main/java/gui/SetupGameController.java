@@ -10,6 +10,7 @@ import javafx.scene.control.*;
 import javafx.stage.Stage;
 import javafx.util.converter.IntegerStringConverter;
 import utils.Const;
+import utils.FxmlUtils;
 
 import java.io.IOException;
 import java.security.InvalidParameterException;
@@ -226,18 +227,8 @@ public class SetupGameController {
 
         newGameButton.setDisable(true);
 
-        Parent root = null;
-        Stage stage = new Stage();
-        try {
-            root = FXMLLoader.load(getClass().getClassLoader().getResource("fxml/gameLayout.fxml"));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        stage.setTitle("Gomoku standard");
-        stage.setMaximized(true);
-        stage.setScene(new Scene(root));
-        Const.currentStage.close();
-        Const.currentStage = stage;
-        Const.currentStage.show();
+        Scene scene = new Scene(FxmlUtils.fxmlLoad("/fxml/gameLayout.fxml"));
+        Gomoku.stage.setScene(scene);
+        Gomoku.stage.setMaximized(true);
     }
 }

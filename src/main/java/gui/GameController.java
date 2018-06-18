@@ -14,6 +14,7 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import utils.Const;
+import utils.FxmlUtils;
 
 import java.io.IOException;
 import java.util.Random;
@@ -85,19 +86,9 @@ public class GameController {
 
     @FXML
     public void newGameSetup(){
-        Parent root = null;
-        Stage stage = new Stage();
-        try {
-            root = FXMLLoader.load(getClass().getClassLoader().getResource("fxml/SetupGameLayout.fxml"));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        stage.setTitle("Gomoku standard");
-        stage.setMaximized(false);
-        stage.setScene(new Scene(root));
-        Const.currentStage.close();
-        Const.currentStage = stage;
-        Const.currentStage.show();
+        Scene scene = new Scene(FxmlUtils.fxmlLoad("/fxml/SetupGameLayout.fxml"));
+        Gomoku.stage.setMaximized(false);
+        Gomoku.stage.setScene(scene);
     }
 
     @FXML

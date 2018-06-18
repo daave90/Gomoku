@@ -10,5 +10,4 @@ public class Const {
     public static Image EMPTY_FIELD_IMAGE = new Image("/img/empty.png");
     public static Image FIRST_PLAYER_IMAGE = new Image("/img/firstPlayer.png");
     public static Image SECOND_PLAYER_IMAGE = new Image("/img/secondPlayer.png");
-    public static Stage currentStage = new Stage();
 }

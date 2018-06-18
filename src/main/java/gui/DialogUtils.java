@@ -23,4 +23,12 @@ public class DialogUtils {
         errorDialog.setHeaderText(message);
         errorDialog.showAndWait();
     }
+
+    public static void errorDialog(String message){
+        Alert errorDialog = new Alert(Alert.AlertType.ERROR);
+        errorDialog.setTitle("Błąd aplikacji");
+        TextArea textArea = new TextArea(message);
+        errorDialog.getDialogPane().setContent(textArea);
+        errorDialog.showAndWait();
+    }
 }

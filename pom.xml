@@ -17,8 +17,17 @@
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>9</source>
+                    <target>9</target>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
-                <version>3.0.0</version>
+                <version>3.1.1</version>
                 <executions>
                     <execution>
                         <phase>package</phase>
@@ -28,7 +37,10 @@
                         <configuration>
                             <transformers>
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass>Monopoly.Gui.Main</mainClass>
+                                    <manifestEntries>
+                                        <Main-Class>gui.Gomoku</Main-Class>
+                                        <Build-Number>123</Build-Number>
+                                    </manifestEntries>
                                 </transformer>
                             </transformers>
                         </configuration>
